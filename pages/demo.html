@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--HERO SECTION-->
+    <header>
+      <h1 class="headerh1">HTML & CSS Concepts Showcase</h1>
+      <p class="headerp">
+        This page demonstrates core HTML elements styled with CSS.
+      </p>
+    </header>
+
+    <nav>
+      <a href="#products">Text</a>
+      <a href="#products">Lists</a>
+      <a href="#products">Table</a>
+      <a href="#products">Form</a>
+      <a href="#products">Media</a>
+    </nav>
+
+    <!--Text & Formatting-->
+
+    <section class="others">
+      <div class="formatter">
+        <h2>Text & Formatting</h2>
+        <p>
+          This is a <b>strong</b> and <em>emphasized </em>sentence with
+          <u>underlined</u> and <span class="highlight">highlighted</span> text.
+        </p>
+        <p>
+          Here's a <a href="example.com">link to Example.com</a> and an
+          <a href="#form">internal link to form</a>.
+        </p>
+      </div>
+
+      <!--Text & Formatting-->
+      <div class="lists">
+        <h1>Lists</h1>
+        <h2>Unordered Lists</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h1>Lists</h1>
+        <h2>Unordered Lists</h2>
+
+        <ol>
+          <li>DownloadL</li>
+          <li>Install</li>
+          <li>Run</li>
+        </ol>
+      </div>
+
+      <!--Table-->
+
+      <div class="table">
+        <h1>Table</h1>
+
+        <table>
+          <tr>
+            <th>Language</th>
+            <th>Type</th>
+            <th>Popularity</th>
+          </tr>
+
+          <tr>
+            <td>HTML</td>
+            <td>Markup</td>
+            <td>High</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>High</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>Programming</td>
+            <td>Very High</td>
+          </tr>
+        </table>
+      </div>
+
+      <!--Form-->
+
+      <div class="form-element">
+        <h1>Form Elements</h1>
+
+        <form action="">
+         
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your Name" />
+
+          <label for="password">Password:</label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Your password"
+          />
+
+          
+
+          <label for="gender">Gender</label>
+          
+          
+          <select name="gender" id="gender" aria-placeholder="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+
+          <label for="bio"></label>
+       
+          <textarea
+            name="bio"
+            id="bio"
+            placeholder="Tell us about yourself..."
+          ></textarea>
+          <p>Subscribe to newsletter</p>
+          <button>Submit</button>
+        </form>
+      </div>
+
+      <!--Media-->
+
+      <div class="media">
+        <!--iMage-->
+        <div class="image">
+          <h1>Image</h1>
+          <img
+            src="images/6831c74612475_IMG-20240325-WA0020.jpg"
+            alt="placeholder image"
+            width="250px"
+            height="200px"
+          />
+        </div>
+
+        <!-- YouTube Video Embed -->
+        <iframe
+          width="250px"
+          height="200px"
+          src="https://www.youtube.com/embed/bUx-vAFZBag"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+
+        <audio controls>
+          <source
+            src="audio/slowing-down-whistle-machiner-comic-279796.mp3"
+            type="audio/mpeg"
+          />
+          <source src="audio-file.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+
+
+
+      </div>
+    </section>
+  </body>
+</html>

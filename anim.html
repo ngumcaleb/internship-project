@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+      }
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        outline: 2px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Exercise, increase and decrease div sizes with javascript & Css-->
+
+    <div id="box"></div>
+
+    <button id="increase" class="p-5 bg-green-800 text-white rounded-lg">
+      increase
+    </button>
+
+    <button id="decrease" class="p-5 bg-red-500 text-white rounded-lg">
+      below
+    </button>
+
+
+    <script>
+      let box = document.getElementById("box");
+      let increase = document.getElementById("increase");
+      let decrease = document.getElementById("decrease");
+
+      increase.addEventListener("click", function () {
+        box.style.height = "500px";
+        box.style.backgroundColor = "Green";
+        box.style.outline = "5px solid green";
+      });
+
+      decrease.addEventListener("click", function () {
+        box.style.height = "300px";
+        box.style.backgroundColor = "red";
+        box.style.outline = "2px solid gray";
+      });
+    </script>
+  </body>
+</html>

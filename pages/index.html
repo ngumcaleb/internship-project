@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One HTML Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header, footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+    }
+
+    h1, h2, h3 {
+      color: #0066cc;
+    }
+
+    .highlight {
+      background: yellow;
+    }
+
+    ul, ol {
+      margin-left: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    form {
+      background: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin-bottom: 2rem;
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #0066cc;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0055aa;
+    }
+
+    .media {
+      margin-bottom: 2rem;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML & CSS Concepts Showcase</h1>
+    <p class="highlight">This page demonstrates core HTML elements styled with CSS.</p>
+  </header>
+
+  <nav>
+    <a href="https://www.google.com">Google</a>
+    <a href="#lists">Lists</a>
+    <a href="#table">Table</a>
+    <a href="#form">Form</a>
+    <a href="#media">Media</a>
+  </nav>
+
+  <main>
+    <section id="text">
+      <h2>Text & Formatting</h2>
+      <p>This is a <strong>strong</strong> and <em>emphasized</em> sentence with <u>underlined</u> and <mark>highlighted</mark> text.</p>
+      <p>Here's a <a href="https://example.com" target="_blank">link to Example.com</a> and an <a href="#form">internal link to form</a>.</p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Download</li>
+        <li>Install</li>
+        <li>Run</li>
+      </ol>
+    </section>
+
+    <section id="table">
+      <h2>Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Type</th>
+            <th>Popularity</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Markup</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Programming</td>
+            <td>Very High</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Form Elements</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="your@email.com" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <label for="gender">Gender:</label>
+       
+        <select id="gender">
+          <option value="">Select...</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option>Other</option>
+        </select>
+
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" /> Subscribe to newsletter
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="media" class="media">
+      <h2>Media</h2>
+      <h3>Image</h3>
+      <img src="../images/1.jpg" alt="Image description" width="300" />
+
+      <h3>Video</h3>
+      <video width="300" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved.</p>
+    <small>Made with ❤️ using HTML & CSS</small>
+  </footer>
+
+</body>
+</html>

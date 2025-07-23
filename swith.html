@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        button {
+            transition: background-color 0.3s ease;
+        }
+        .p-5 {
+            padding:100px;
+        }
+        .bg-black-500 {
+            background-color: #3b82f6;
+        }
+        .text-white {
+            color: white;
+            font-size: 50px;
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .bg-green-500 {
+            background-color: #10b981;
+        }
+    </style>
+</head>
+<body>
+    <!-- button caries an action and name changes and 
+     when clicked again takes action anbd name changes back again -->
+    <button id="toggleButton" class="p-5 bg-black-500 text-white rounded-lg">
+        Click me
+    </button>
+
+    
+    <script>
+        let button = document.getElementById("toggleButton");
+
+        button.addEventListener("click", function () {
+            if (button.innerHTML === "Click me") {
+                button.innerHTML = "Clicked!";
+                button.style.backgroundColor = "green";
+            } else {
+                button.innerHTML = "Click me";
+                button.style.backgroundColor = "black";
+            }
+        });
+    </script>
+
+  
+   
+</body>
+</html>

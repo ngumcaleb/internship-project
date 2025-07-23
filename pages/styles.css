@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: rgb(18, 18, 22);
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+
+
+}
+
+
+.headerh1 {
+    color: rgb(25, 25, 185);
+    padding: 10px 0px;
+
+}
+
+.headerp {
+    background-color: orange;
+    color: white;
+    padding: 10px 0;
+    width: 95%;
+    text-align: center;
+    margin: 0px 2.5%;
+}
+
+
+nav {
+    display: flex;
+    background-color: gray;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+}
+
+a {
+    margin: 0 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 100px;
+}
+
+
+.formatter {
+    padding: 30px 10px;
+}
+
+.formatter h2 {
+    color: black;
+    font-size: 40px;
+}
+
+.formatter p,
+a,
+em,
+b,
+u {
+    font-size: 25px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.formatter a {
+    color: black;
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: orange;
+}
+
+.lists {
+    padding: 30px 10px;
+}
+
+
+.lists h1 {
+    font-size: 35px;
+    color: black;
+
+}
+
+.lists h2 {
+    font-size: 33px;
+
+}
+
+.lists li {
+    font-size: 20px;
+}
+
+
+
+
+
+.table {
+    padding: 30px 10px;
+    width: 100%;
+    border: 1px;
+
+}
+
+
+.table h1 {
+    font-size: 45px;
+    color: black;
+}
+
+
+.table th,td {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0px;
+    padding: 10px;
+    text-align: start;
+}
+
+
+.form-element{
+       padding: 30px 10px;
+       width: fit-content;
+       padding: 10px 30px;
+}
+
+
+.form-element h1{
+    font-size: 35px;
+}
+
+.form-element form{
+    align-items: start;
+    display: block;
+    background-color: rgb(229, 230, 232);
+    width: fit-content;
+    padding: 10px 30px;
+}
+
+.form-element label{
+    align-items: start;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.form-element input{
+    display: block;
+    padding: 8px 23px;
+    width: 900px;
+     margin-bottom: 10px;
+}

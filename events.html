@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventnts in javascript</title>
+  </head>
+  <body>
+    <!-- Basic events in JavaScript 
+    <h1>JavaScript Events</h1>
+    <p>Events are actions or occurrences that happen in the browser, which can be detected
+    by JavaScript. Examples include user interactions like clicks, key presses, and mouse movements.</p>
+-->
+    <h1>JavaScript Events</h1>
+    <h2  id="ex">Paragraph</h2>
+
+    <button  id="clickme">clickme</button>
+
+    <script>
+      // Function to handle the click event
+      let ex = document.getElementById("ex");
+      let btn = document.getElementById("clickme");
+
+      btn.addEventListener("click", function () {
+        ex.style.color = "red";
+        ex.style.fontSize = "30px";
+        ex.style.backgroundColor = "yellow";
+        ex.innerHTML = "You clicked the button!";
+      });
+
+      hgjhgjhgjhgjhghjghjgjhgjhghj
+
+      //event listerners keywords in javascript
+      //eg mouseover, mouseout, click, dblclick, keydown, keyup, focus, blur, change, submit 
+    </script>
+  </body>
+</html>

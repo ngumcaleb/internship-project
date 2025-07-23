@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //arrays in javascript
+        // Creating an array
+        const fruits = ['Apple', 'Banana', 'Cherry'];
+
+        // Accessing elements
+        console.log(fruits[0]); // Output: Apple
+
+        // Adding elements  
+        fruits.push('Date');
+        console.log(fruits); // Output: ['Apple', 'Banana', 'Cherry', 'Date']
+
+        // Removing elements
+        fruits.pop();
+        console.log(fruits); // Output: ['Apple', 'Banana', 'Cherry']
+
+        // Iterating over an array
+        fruits.forEach((fruit, index) => {
+            console.log(`${index}: ${fruit}`);
+        });
+
+    </script>
+</body>
+</html>

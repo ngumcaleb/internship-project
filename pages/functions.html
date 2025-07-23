@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo" >I am a heading</h1>
+     <h3 id="success" style="color: green;"></h3>
+
+    <button onclick="greet()">Change me</button>
+    <button onclick="revert()">Check status</button>
+
+    <script>
+
+      function greet(){
+        let text= document.getElementById("demo");
+        text.innerHTML = "I have been adjusted"; }
+
+        function revert(){
+           let success= document.getElementById("success");
+            success.innerHTML = "successful"; }
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--Two images in a row, styled with tailwind css classes-->
+    <div class="flex justify-center items-center h-screen">
+      <div class="grid grid-cols-2 gap-4">
+        <img
+          src="images/1.jpg"
+          alt="Image 1"
+          class="w-80 h-80 rounded-xl shadow-sm"
+        />
+        <img
+          src="images/2.jpg"
+          alt="Image 2"
+          class="w-80 h-80 rounded-xl shadow-sm"
+        />
+    
+        <button onclick="swapper()" class="bg-orange-600 rounded-lg py-2 px-4">
+          Swap Photo
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function swapper() {
+        const img1 = document.querySelector("img:nth-child(1)");
+        const img2 = document.querySelector("img:nth-child(2)");
+        const tempSrc = img1.src;
+        img1.src = img2.src;
+        img2.src = tempSrc;
+      }
+    </script>
+  </body>
+</html>
