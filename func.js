@@ -8,7 +8,7 @@
       // Function with parameters
       function greetUser(name) {
         console.log(`Hello, ${name}!`);
-      }
+      } 
       // Function returning a value
       function add(a, b) {
         return a + b;
